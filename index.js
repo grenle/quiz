@@ -26,8 +26,6 @@ let log;
 const setMessages = (m) => messages = m;
 
 
-const now = () => (new Date()).toISOString;
-
  /**
   * Shows the traditional usage string with switches and
   * arguments and quits. This is used for missing or
