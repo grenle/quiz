@@ -1,0 +1,20 @@
+{
+
+  "default": "en",
+  
+  "en":{
+    "noQuizError": "Missing quiz source directory",
+    "quizNotFound": "The source dir does not exist"
+  },
+  
+  "es":{
+    "noQuizError": "Falta el directorio de cuestionarios",
+    "quizNotFound": "El directorio de origen no existe"
+  },
+
+  "fr":{
+    "noQuizError": "Veuillez indiquer le nom du répertoire source",
+    "quizNotFound": "Le répertoire source n'existe pas"
+  }
+
+}

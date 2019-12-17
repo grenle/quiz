@@ -1,0 +1,6 @@
+# use npm to get those
+node_modules/
+
+# for Google Form API. Get your own
+credentials.json
+token.json
