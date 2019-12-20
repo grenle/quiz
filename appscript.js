@@ -63,8 +63,8 @@ function createItemChoices(choices, correct){
 function quizItemToMultipeChoice(quizItem, itemNum){
   const choiceList = createItemChoices(quizItem.choices, quizItem.correct);
   const choiceString = choiceList.reduce( (x, y) => x+y);
-  return `  item = form.addMultipleChoiceItem()\n`+
-  `  item.setTitle("${quizItem.question}")\n`+
+  return `  item = form.addMultipleChoiceItem();\n`+
+  `  item.setTitle("${quizItem.question}");\n`+
   `  item.setChoices([\n`+
   createItemChoices(quizItem.choices, quizItem.correct).reduce( (x, y) => x+y)+
   `  ])`;
@@ -73,8 +73,8 @@ function quizItemToMultipeChoice(quizItem, itemNum){
 
 function createForm(name, items){
   const content = items.map(quizItemToMultipeChoice);
-  let contentS = content.join(',\n');
-  return `function createForm(){\n${prolog(name)}${contentS}${epilog}\n}`;
+  let contentS = content.join(';\n');
+  return `function createForm(){\n${prolog(name)}${contentS}\n${epilog}\n}`;
 }
 
 

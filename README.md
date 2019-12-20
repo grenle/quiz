@@ -18,21 +18,21 @@ C'est simplement un fichier .md contenant un titre dénotant la question, une li
 A la racine du projet, nous créons un répertoire/quiz `html1` avec l'arboresence:
 ```
 [ <racine-projet>/md 
-  [ js1 ],
-  [ js2 ],
-  [ js3 ],
+  [ js1 [...] ],
+  [ js2 [...] ],
+  [ js3 [...] ],
 ]
 ```
 
-Nous avons déjà quelques tests, mais il nous faut un test sur html.
+Nous avons déjà quelques tests sur Javascript mais rien sur html. Il faut y pallier de suite.
 
 Pour créer un quiz, il nous faut un répertoire sous `/md`:
 
 ```
-<...>/md/ > mkdir html1
-<...>/md/ > cd html1
-<...>/md/ > touch q1.md
-<...>/md/ > touch q2.md
+<racine-projet>/md/ > mkdir html1
+<racine-projet>/md/ > cd html1
+<racine-projet>/md/ > touch q1.md
+<racine-projet>/md/ > touch q2.md
 ```
 
 Dans le fichier q1.md, on y met le contenu:
@@ -71,16 +71,16 @@ function createForm(){
   item = form.addMultipleChoiceItem()
   item.setTitle("Comment definir l'encodage d'un document HTML?")
   item.setChoices([
-    item.createChoice("la propriété "lang" de la balise html", false),
-    item.createChoice("la meta balise "charset"", true),
-    item.createChoice("la propriété "encoding" de la balise html", false),
+    item.createChoice('la propriété "lang" de la balise html', false),
+    item.createChoice('la meta balise "charset"', true),
+    item.createChoice('la propriété "encoding" de la balise html', false),
   ]),
   item = form.addMultipleChoiceItem()
-  item.setTitle("Comment dénoter l'expression x > 3?")
+  item.setTitle('Comment dénoter l'expression x > 3?')
   item.setChoices([
-    item.createChoice("x &gt; 3", true),
-    item.createChoice("x > 3", false),
-    item.createChoice("x &#62; 3", true),
+    item.createChoice('x &gt; 3', true),
+    item.createChoice('x > 3', false),
+    item.createChoice('x &#62; 3', true),
   ])  Logger.log('Published URL: ' + form.getPublishedUrl());
   Logger.log('Editor URL:    ' + form.getEditUrl());
 
@@ -90,6 +90,6 @@ function createForm(){
 [2019-12-20T07:28:03.292Z] Appscript in clipboard
 ```
 
-En plus d'être affiché, le code appscript est également copié dans le presse papier. Il vous suffit d'aller dans google forms, ouvrir n'importe quel formulaire, appuyer sur l'elipsis (...) en haut à droite et choisir appscript.
+En plus d'être affiché, le code appscript est également copié dans le presse papier.
 
-Une fois le code collé dans cette fenêtre, on `run function` et on a un formulaire tout neuf.
+Reste à créer le Google Form. On se rend sur `https://docs.google.com/forms/u/0/` et on créé un nouveau formulaire, de n'importe quelle sorte. `Blank` est le choix idéal. Une fois sur la page de création de formulaire, on clique sur l'ellipsis à côté de sa photo de profil et on selectionne `Scipt Editor`. On remplace le texte présent par celui copié par le script quiz et 
