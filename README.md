@@ -41,9 +41,9 @@ Dans le fichier q1.md, on y met le contenu:
 Comment definir l'encodage d'un document HTML?
 ==============================================
 
-- la propriété "lang" de la balise html
-- la meta balise "charset"
-- la propriété "encoding" de la balise html
+- la propriété 'lang' de la balise html
+- la meta balise 'charset'
+- la propriété 'encoding' de la balise html
 
 ## 2
 ```
@@ -67,27 +67,28 @@ Et c'est parti pour la génération du quiz, pour la quatrième promotion:
 <...>/md/ > node index.js --verbose html1 
 [snip]
 function createForm(){
-  var form = FormApp.create('html1 / Promo 4');
-  item = form.addMultipleChoiceItem()
-  item.setTitle("Comment definir l'encodage d'un document HTML?")
+  var form = FormApp.create('html1 / Promo 2');
+  item = form.addMultipleChoiceItem();
+  item.setTitle("Comment definir l'encodage d'un document HTML?");
   item.setChoices([
-    item.createChoice('la propriété "lang" de la balise html', false),
-    item.createChoice('la meta balise "charset"', true),
-    item.createChoice('la propriété "encoding" de la balise html', false),
-  ]),
-  item = form.addMultipleChoiceItem()
-  item.setTitle('Comment dénoter l'expression x > 3?')
+    item.createChoice("la propriété 'lang' de la balise html", false),
+    item.createChoice("la meta balise 'charset'", true),
+    item.createChoice("la propriété 'encoding' de la balise html", false),
+  ]);
+  item = form.addMultipleChoiceItem();
+  item.setTitle("Comment dénoter l'expression x > 3?");
   item.setChoices([
-    item.createChoice('x &gt; 3', true),
-    item.createChoice('x > 3', false),
-    item.createChoice('x &#62; 3', true),
-  ])  Logger.log('Published URL: ' + form.getPublishedUrl());
+    item.createChoice("x &gt; 3", true),
+    item.createChoice("x > 3", false),
+    item.createChoice("x &#62; 3", true),
+  ])
+  Logger.log('Published URL: ' + form.getPublishedUrl());
   Logger.log('Editor URL:    ' + form.getEditUrl());
 
 }
 
-[2019-12-20T07:28:03.279Z] Copying appscript to clipboard
-[2019-12-20T07:28:03.292Z] Appscript in clipboard
+[2019-12-20T08:20:06.549Z] Copying appscript to clipboard
+[2019-12-20T08:20:06.586Z] Appscript in clipboard
 ```
 
 En plus d'être affiché, le code appscript est également copié dans le presse papier.
