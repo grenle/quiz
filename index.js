@@ -34,7 +34,7 @@ const setMessages = (m) => messages = m;
   * @returns void
   */
 function showUsageAndQuit(){
-  console.log('usage: node index.js [-v | --verbose] (--quiz | -q) quizDir');
+  console.log('usage: node index.js [-v | --verbose] quizDir quizNum');
   process.exit(1);
 }
 
