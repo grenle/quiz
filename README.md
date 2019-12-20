@@ -92,4 +92,4 @@ function createForm(){
 
 En plus d'être affiché, le code appscript est également copié dans le presse papier.
 
-Reste à créer le Google Form. On se rend sur `https://docs.google.com/forms/u/0/` et on créé un nouveau formulaire, de n'importe quelle sorte. `Blank` est le choix idéal. Une fois sur la page de création de formulaire, on clique sur l'ellipsis à côté de sa photo de profil et on selectionne `Scipt Editor`. On remplace le texte présent par celui copié par le script quiz et 
+Reste à créer le Google Form. On se rend sur `https://docs.google.com/forms/u/0/` et on créé un nouveau formulaire, de n'importe quelle sorte. `Blank` est le choix idéal. Une fois sur la page de création de formulaire, on clique sur l'ellipsis à côté de sa photo de profil et on selectionne `Scipt Editor`. On remplace le texte présent par celui copié par le script quiz et on click run (>). Le nouveau formulaire est ajouté à notre accueil Google Forms.
