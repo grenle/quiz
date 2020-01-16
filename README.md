@@ -3,6 +3,9 @@ QUIZ
 
 Un mini générateur de quiz pour Google Forms.
 
+![quiz demo gif](grenlequizz.gif)
+
+
 ## Usage
 
 ```node index.js [-v | --verbose] quizDir quizNum```
